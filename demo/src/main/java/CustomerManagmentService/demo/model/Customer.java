@@ -7,6 +7,8 @@ import jakarta.persistence.*;
 @Table(name = "customers")
 public class Customer {
 
+    // data fields
+    // every customer has a unique ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -30,6 +32,7 @@ public class Customer {
 
     }
 
+    // constructors
     public Customer(String name, String email, long phone, int zip, boolean membership) {
         super();
         this.name = name;
@@ -39,6 +42,7 @@ public class Customer {
         this.membership = membership;
     }
 
+    // getters and setters, notice the ID cannot be changed
     public long getId() {
         return id;
     }

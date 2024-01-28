@@ -38,7 +38,7 @@ public class CustomerController {
         return ResponseEntity.ok(customer);
     }
 
-    // update customer
+    // update customer by id
     @PutMapping("/customers/{id}")
     public ResponseEntity<Customer> updateCustomer(@PathVariable Long id, @RequestBody Customer customerDetails){
         Customer customer = customerRepository.findById(id)
@@ -69,7 +69,7 @@ public class CustomerController {
         return ResponseEntity.ok(updatedCustomer);
     }
 
-    // delete customer
+    // delete customer by id
     @DeleteMapping("/customers/{id}")
     public ResponseEntity<Map<String, Boolean>> deleteCustomer(@PathVariable Long id){
         Customer customer = customerRepository.findById(id)
