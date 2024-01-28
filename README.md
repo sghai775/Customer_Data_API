@@ -1,5 +1,5 @@
 # Customer_Data_API
-Backend of a customer management serivce built usin the Java Spring Boot framework and PostgreSQL services.
+Backend of a customer management serivce built using the Java Spring Boot framework and PostgreSQL services.
 
 Customer objects have unique IDs and personal information as well as a general "Premium Member" indicator.
 
